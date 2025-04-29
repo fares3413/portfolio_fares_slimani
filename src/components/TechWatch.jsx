@@ -1,82 +1,55 @@
-import React from "react";
-import { motion } from "framer-motion";
-import { Tilt } from 'react-tilt';
-
-import { styles } from "../styles";
-import { SectionWrapper } from "../hoc";
-import { fadeIn, textVariant } from "../utils/motion";
-import { techWatchItems } from "../constants";
+"use client"
+import { motion } from "framer-motion"
+import { SectionWrapper } from "../hoc"
+import { fadeIn } from "../utils/motion"
+import { techWatchItems } from "../constants"
+import Carousel from "./Carousel"
 
 const TechWatchCard = ({ index, title, description, tags, link }) => {
   return (
-    <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
-      <Tilt
-        options={{
-          max: 45,
-          scale: 1,
-          speed: 450,
-        }}
-        className='bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full min-h-[400px] flex flex-col'
-      >
-        <div className='mt-5'>
-          <h3 className='text-white font-bold text-[24px]'>{title}</h3>
-          <p className='mt-2 text-secondary text-[14px] flex-grow'>{description}</p>
+    <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)} className="w-full">
+      <div className="bg-tertiary p-5 rounded-2xl sm:w-[500px] w-full h-full">
+        <div className="mt-5">
+          <h3 className="text-white font-bold text-[24px]">{title}</h3>
+          <div className="mt-4 flex flex-wrap gap-2 mb-4">
+            {tags.map((tag) => (
+              <p key={`${title}-${tag.name}`} className={`text-[14px] ${tag.color}`}>
+                #{tag.name}
+              </p>
+            ))}
+          </div>
+          <p className="mt-2 text-secondary text-[16px] leading-[24px]">{description}</p>
         </div>
 
-        <div className='mt-4 flex flex-wrap gap-2'>
-          {tags.map((tag) => (
-            <p
-              key={`${title}-${tag.name}`}
-              className={`text-[14px] ${tag.color}`}
-            >
-              #{tag.name}
-            </p>
-          ))}
-        </div>
-        
         {link && (
-          <div className='mt-4'>
-            <a 
-              href={link} 
-              target="_blank" 
-              rel="noopener noreferrer"
-              className='text-gradient font-medium cursor-pointer'
+          <div className="mt-4 flex justify-end">
+            <button
+              onClick={() => window.open(link, "_blank")}
+              className="bg-[#915EFF] py-2 px-4 rounded-xl outline-none w-fit text-white font-bold shadow-md shadow-primary text-[14px]"
             >
-              En savoir plus →
-            </a>
+              En savoir plus
+            </button>
           </div>
         )}
-      </Tilt>
+      </div>
     </motion.div>
-  );
-};
+  )
+}
 
 const TechWatch = () => {
+  const techWatchDescription =
+    "Ma veille technologique est centrée sur la cybersécurité des applications web, un domaine crucial pour tout développeur. Je surveille activement les dernières vulnérabilités, les bonnes pratiques et les outils de sécurisation pour garantir que mes applications sont robustes et sécurisées."
+
   return (
-    <>
-      <motion.div variants={textVariant()}>
-        <p className={`${styles.sectionSubText}`}>Rester à jour</p>
-        <h2 className={`${styles.sectionHeadText}`}>Veille Technologique.</h2>
-      </motion.div>
+    <Carousel
+      items={techWatchItems}
+      renderItem={(item, index) => <TechWatchCard key={`techwatch-${index}`} index={index} {...item} />}
+      title="Veille Technologique."
+      subtitle="Rester à jour"
+      description={techWatchDescription}
+      itemsPerPage={2} // Show 2 cards as requested
+    />
+  )
+}
 
-      <div className='w-full flex'>
-        <motion.p
-          variants={fadeIn("", "", 0.1, 1)}
-          className='mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]'
-        >
-          En tant qu'étudiant en BTS SIO SLAM, je maintiens une veille technologique active
-          pour rester informé des dernières tendances et innovations dans le domaine du développement.
-          Voici les principaux sujets que je surveille actuellement.
-        </motion.p>
-      </div>
-
-      <div className='mt-20 flex flex-wrap gap-7'>
-        {techWatchItems.map((item, index) => (
-          <TechWatchCard key={`techwatch-${index}`} index={index} {...item} />
-        ))}
-      </div>
-    </>
-  );
-};
-
-export default SectionWrapper(TechWatch, "techwatch");
+export default SectionWrapper(TechWatch, "techwatch")

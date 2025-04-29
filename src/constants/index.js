@@ -3,6 +3,7 @@ import {
   backend,
   creator,
   web,
+  certif,
   javascript,
   typescript,
   html,
@@ -14,16 +15,16 @@ import {
   mongodb,
   git,
   figma,
-  docker,
   meta,
   starbucks,
+  expertpc,
   tesla,
   shopify,
   carrent,
   jobit,
   tripguide,
   threejs,
-} from "../assets";
+} from "../assets"
 
 export const navLinks = [
   {
@@ -35,6 +36,10 @@ export const navLinks = [
     title: "Formation",
   },
   {
+    id: "stages",
+    title: "Stages",
+  },
+  {
     id: "work",
     title: "Projets",
   },
@@ -43,10 +48,18 @@ export const navLinks = [
     title: "Veille",
   },
   {
+    id: "certificates",
+    title: "Certifications",
+  },
+  {
+    id: "cv",
+    title: "CV",
+  },
+  {
     id: "contact",
     title: "Contact",
   },
-];
+]
 
 const services = [
   {
@@ -54,7 +67,7 @@ const services = [
     icon: web,
   },
   {
-    title: "Développeur React",
+    title: "Développeur Frontend",
     icon: mobile,
   },
   {
@@ -62,10 +75,10 @@ const services = [
     icon: backend,
   },
   {
-    title: "Intégrateur 3D",
+    title: "Designer UI/UX",
     icon: creator,
   },
-];
+]
 
 const technologies = [
   {
@@ -81,16 +94,16 @@ const technologies = [
     icon: javascript,
   },
   {
-    name: "TypeScript",
-    icon: typescript,
+    name: "PHP",
+    icon: typescript, // Replace with PHP icon
   },
   {
     name: "React JS",
     icon: reactjs,
   },
   {
-    name: "Redux Toolkit",
-    icon: redux,
+    name: "Laravel",
+    icon: redux, // Replace with Laravel icon
   },
   {
     name: "Tailwind CSS",
@@ -101,32 +114,28 @@ const technologies = [
     icon: nodejs,
   },
   {
-    name: "MongoDB",
-    icon: mongodb,
+    name: "Bootstrap",
+    icon: mongodb, // Replace with Bootstrap icon
   },
   {
-    name: "Three JS",
-    icon: threejs,
+    name: "Java",
+    icon: threejs, // Replace with Java icon
   },
   {
-    name: "git",
+    name: "Git",
     icon: git,
   },
   {
-    name: "figma",
-    icon: figma,
+    name: "MySQL",
+    icon: figma, // Replace with MySQL icon
   },
-  {
-    name: "docker",
-    icon: docker,
-  },
-];
+]
 
 const experiences = [
   {
     title: "BTS SIO option SLAM",
     company_name: "École F2i - Vincennes",
-    icon: starbucks, // You may want to replace this with a school icon
+    icon: starbucks, // Replace with school icon
     iconBg: "#fff",
     date: "Sept 2023 - En cours",
     points: [
@@ -139,7 +148,7 @@ const experiences = [
   {
     title: "Technicien Spécialisé en Développement",
     company_name: "OFPPT - Maroc",
-    icon: tesla, // You may want to replace this with a school icon
+    icon: tesla, // Replace with school icon
     iconBg: "#fff",
     date: "Sept 2021 - Juin 2022",
     points: [
@@ -152,7 +161,7 @@ const experiences = [
   {
     title: "Baccalauréat Sciences de la Vie et de la Terre",
     company_name: "Riad School - Maroc",
-    icon: shopify, // You may want to replace this with a school icon
+    icon: shopify, // Replace with school icon
     iconBg: "#fff",
     date: "Sept 2020 - Juin 2021",
     points: [
@@ -161,34 +170,70 @@ const experiences = [
       "Préparation aux études supérieures.",
     ],
   },
-];
+]
+
+// New section for internships (stages)
+const stages = [
+  {
+    title: "Développeur Web",
+    company_name: "Famility - Casablanca, Maroc",
+    icon: meta, // Replace with company icon
+    iconBg: "#FFF",
+    date: "Décembre 2024 - Janvier 2025",
+    points: [
+      "Développement d'interfaces web front-end.",
+      "Codage avec les langages de programmation HTML, Tailwind, JavaScript, Laravel.",
+      "Gestion de la base de données des informations utilisateurs.",
+    ],
+  },
+  {
+    title: "Développeur Web",
+    company_name: "Famility - Casablanca, Maroc",
+    icon: meta, // Replace with company icon
+    iconBg: "#FFF",
+    date: "Mai 2024 - Juillet 2024",
+    points: [
+      "Collaboration à l'élaboration de la maquette UX/UI du site avec l'équipe design.",
+      "Création de wireframes et prototypes à l'aide de Figma / Adobe XD.",
+      "Contribution au choix des palettes de couleurs, typographies et éléments graphiques polyvalent.",
+    ],
+  },
+  {
+    title: "Assistant Commercial",
+    company_name: "Expert PC - Oujda, Maroc",
+    icon: expertpc, // Replace with company icon
+    iconBg: "#FFF",
+    date: "Janvier 2019 - Août 2020",
+    points: [
+      "Gestion des commandes clients et suivi des stocks pour assurer une disponibilité optimale des produits.",
+      "Suivi des commandes clients, des livraisons et des facturations pour assurer un service clientèle efficace.",
+    ],
+  },
+]
 
 const testimonials = [
   {
-    testimonial:
-      "Fares a démontré une excellente capacité d'apprentissage et une grande motivation dans ses projets.",
+    testimonial: "Fares a démontré une excellente capacité d'apprentissage et une grande motivation dans ses projets.",
     name: "Sarah Dupont",
     designation: "Professeur",
     company: "École F2i",
     image: "https://randomuser.me/api/portraits/women/4.jpg",
   },
   {
-    testimonial:
-      "J'ai rarement vu un étudiant aussi passionné par les nouvelles technologies et le développement web.",
+    testimonial: "J'ai rarement vu un étudiant aussi passionné par les nouvelles technologies et le développement web.",
     name: "Thomas Martin",
     designation: "Mentor",
     company: "Tech Academy",
     image: "https://randomuser.me/api/portraits/men/5.jpg",
   },
   {
-    testimonial:
-      "Fares a su relever tous les défis techniques que nous lui avons proposés avec créativité et rigueur.",
+    testimonial: "Fares a su relever tous les défis techniques que nous lui avons proposés avec créativité et rigueur.",
     name: "Léa Moreau",
     designation: "Responsable de stage",
     company: "WebSolutions",
     image: "https://randomuser.me/api/portraits/women/6.jpg",
   },
-];
+]
 
 const projects = [
   {
@@ -210,6 +255,27 @@ const projects = [
       },
     ],
     image: carrent,
+    source_code_link: "https://github.com/",
+  },
+  {
+    name: "Carousel Project",
+    description:
+      "Projet de carousel interactif avec animations fluides et responsive design, permettant de présenter des images ou du contenu de manière élégante.",
+    tags: [
+      {
+        name: "javascript",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "css",
+        color: "green-text-gradient",
+      },
+      {
+        name: "html",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: jobit,
     source_code_link: "https://github.com/",
   },
   {
@@ -254,67 +320,123 @@ const projects = [
     image: tripguide,
     source_code_link: "https://github.com/",
   },
-];
+]
 
-// New section for Veille Technologique
+// Updated Tech Watch section
 const techWatchItems = [
   {
-    title: "Intelligence Artificielle",
-    description: "Suivi des avancées en IA générative et des applications pratiques dans le développement web. Exploration des frameworks comme TensorFlow.js et des services cloud d'IA.",
+    title: "Cybersécurité des Applications Web",
+    description:
+      "La cybersécurité est un enjeu majeur pour tout développeur d'applications web. Ma veille se concentre sur les vulnérabilités OWASP Top 10, les bonnes pratiques de sécurisation, et les dernières menaces émergentes. Je surveille particulièrement les injections SQL, XSS, CSRF et les failles d'authentification qui représentent les risques les plus courants.",
     tags: [
-      {
-        name: "ia",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "machinelearning",
-        color: "green-text-gradient",
-      },
-      {
-        name: "chatgpt",
-        color: "pink-text-gradient",
-      },
-    ],
-    link: "https://openai.com",
-  },
-  {
-    title: "Développement Web 3D",
-    description: "Exploration des technologies Three.js et React Three Fiber pour créer des expériences web immersives. Étude des performances et optimisations pour les applications 3D sur le web.",
-    tags: [
-      {
-        name: "threejs",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "webgl",
-        color: "green-text-gradient",
-      },
-      {
-        name: "3d",
-        color: "pink-text-gradient",
-      },
-    ],
-    link: "https://threejs.org",
-  },
-  {
-    title: "Cybersécurité",
-    description: "Veille sur les meilleures pratiques de sécurité pour les applications web modernes. Étude des vulnérabilités courantes et des méthodes de protection des données utilisateur.",
-    tags: [
-      {
-        name: "securité",
-        color: "blue-text-gradient",
-      },
       {
         name: "owasp",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "pentest",
         color: "green-text-gradient",
       },
       {
-        name: "auth",
+        name: "securité",
         color: "pink-text-gradient",
       },
     ],
-    link: "https://owasp.org",
+    link: "https://owasp.org/www-project-top-ten/",
   },
-];
+  {
+    title: "Méthodologie de veille",
+    description:
+      "Ma veille s'appuie sur plusieurs sources fiables : le site de l'OWASP, les bulletins du CERT-FR, les forums spécialisés comme HackTricks et PortSwigger, et des newsletters comme ZATAZ. J'utilise Google Alerts et Feedly pour suivre les mots-clés pertinents et je participe à des webinaires sur la sécurité web.",
+    tags: [
+      {
+        name: "sources",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "cert-fr",
+        color: "green-text-gradient",
+      },
+      {
+        name: "veille",
+        color: "pink-text-gradient",
+      },
+    ],
+    link: "https://www.cert.ssi.gouv.fr/",
+  },
+  {
+    title: "Actualités et cas concrets",
+    description:
+      "Je suis attentivement les incidents de sécurité récents comme la faille MOVEit (2023-2024) qui a touché de nombreuses entreprises, la fuite de données chez France Travail (janvier 2024), et l'évolution des réglementations comme le RGPD qui impactent directement notre métier de développeur. Ces cas réels m'aident à comprendre les conséquences pratiques des vulnérabilités.",
+    tags: [
+      {
+        name: "incidents",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "rgpd",
+        color: "green-text-gradient",
+      },
+      {
+        name: "actualité",
+        color: "pink-text-gradient",
+      },
+    ],
+    link: "https://www.zataz.com/",
+  },
+  {
+    title: "Outils et bonnes pratiques",
+    description:
+      "Dans le cadre de ma formation, j'ai appris à utiliser des outils comme OWASP ZAP et Burp Suite pour tester la sécurité de mes applications. J'applique systématiquement les bonnes pratiques : validation des entrées, paramétrage des requêtes SQL, utilisation de frameworks sécurisés, chiffrement des données sensibles et mise à jour régulière des dépendances.",
+    tags: [
+      {
+        name: "outils",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "zap",
+        color: "green-text-gradient",
+      },
+      {
+        name: "pratiques",
+        color: "pink-text-gradient",
+      },
+    ],
+    link: "https://www.zaproxy.org/",
+  },
+]
 
-export { services, technologies, experiences, testimonials, projects, techWatchItems };
+// New section for certificates
+const certificates = [
+  {
+    title: "Certification HTML/CSS",
+    image: certif,
+    issuer: "FreeCodeCamp",
+    date: "Juin 2023",
+    link: "https://www.freecodecamp.org/",
+  },
+  {
+    title: "Certification JavaScript",
+    image: certif,
+    issuer: "Udemy",
+    date: "Septembre 2023",
+    link: "https://www.udemy.com/",
+  },
+  {
+    title: "Certification PHP/MySQL",
+    image: certif,
+    issuer: "OpenClassrooms",
+    date: "Décembre 2023",
+    link: "https://openclassrooms.com/",
+  },
+  {
+    title: "Certification React",
+    image: certif,
+    issuer: "SoloLearn",
+    date: "Février 2024",
+    link: "https://www.sololearn.com/",
+  },
+]
+
+
+export { services, technologies,certificates, experiences,stages,testimonials,  projects, techWatchItems  }
