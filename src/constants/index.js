@@ -1,9 +1,13 @@
 import {
+  certifcss,
+  certifgoogle,
+  certifhtml,
+  certifjava,
+  certifsql,
   mobile,
   backend,
   creator,
   web,
-  certif,
   javascript,
   typescript,
   html,
@@ -20,11 +24,17 @@ import {
   expertpc,
   tesla,
   shopify,
+  tictactoe,
+  testris,
+  qr,
   carrent,
   jobit,
   tripguide,
   threejs,
-} from "../assets"
+} 
+from "../assets"
+
+
 
 export const navLinks = [
   {
@@ -254,7 +264,7 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: carrent,
+    image: tripguide,
     source_code_link: "https://github.com/",
   },
   {
@@ -275,28 +285,7 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: jobit,
-    source_code_link: "https://github.com/",
-  },
-  {
-    name: "Application de Gestion",
-    description:
-      "Application web permettant de gérer des ressources, suivre des projets et analyser des données avec des visualisations interactives.",
-    tags: [
-      {
-        name: "react",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "mongodb",
-        color: "green-text-gradient",
-      },
-      {
-        name: "nodejs",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: jobit,
+    image: carrent,
     source_code_link: "https://github.com/",
   },
   {
@@ -317,8 +306,71 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: tripguide,
+    image: jobit,
     source_code_link: "https://github.com/",
+  },
+  {
+    name: "Tic-Tac-Toe",
+    description:
+      "Un jeu de morpion interactif développé avec JavaScript, HTML et CSS. Ce jeu classique permet à deux joueurs de s'affronter tour à tour avec une interface intuitive et un suivi de l'historique des coups.",
+    tags: [
+      {
+        name: "javascript",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "html",
+        color: "green-text-gradient",
+      },
+      {
+        name: "css",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: tictactoe, // You'll need to replace with actual image
+    source_code_link: "https://github.com/fares3413/tic-tac-toe",
+  },
+  {
+    name: "QR Code Generator",
+    description:
+      "Application web permettant de générer des QR codes personnalisés à partir de texte ou d'URLs. Idéal pour créer rapidement des codes QR pour des sites web, cartes de visite ou événements.",
+    tags: [
+      {
+        name: "javascript",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "html",
+        color: "green-text-gradient",
+      },
+      {
+        name: "api",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: qr, // You'll need to replace with actual image
+    source_code_link: "https://github.com/fares3413/Qr-code-generater",
+  },
+  {
+    name: "Tetris",
+    description:
+      "Recréation du célèbre jeu Tetris avec des fonctionnalités modernes. Ce projet implémente la logique complète du jeu, y compris la rotation des pièces, la détection de collision et le système de score.",
+    tags: [
+      {
+        name: "javascript",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "html5",
+        color: "green-text-gradient",
+      },
+      {
+        name: "css3",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: testris, // You'll need to replace with actual image
+    source_code_link: "https://github.com/fares3413/TESTRIS",
   },
 ]
 
@@ -409,34 +461,40 @@ const techWatchItems = [
 // New section for certificates
 const certificates = [
   {
-    title: "Certification HTML/CSS",
-    image: certif,
-    issuer: "FreeCodeCamp",
-    date: "Juin 2023",
-    link: "https://www.freecodecamp.org/",
+    title: "SQL Certification",
+    image: certifsql,
+    issuer: "Intellipaat",
+    date: "2023",
+    link: "https://intellipaat.com/academy/certificate-link/?Yz02MTkmdT0xNzI1MDUmZXh0PTE=",
   },
   {
-    title: "Certification JavaScript",
-    image: certif,
-    issuer: "Udemy",
-    date: "Septembre 2023",
-    link: "https://www.udemy.com/",
+    title: "Google IT Support",
+    image: certifgoogle,
+    issuer: "Coursera",
+    date: "2023",
+    link: "https://www.coursera.org/account/accomplishments/verify/QUPQ2Z6JR8WY",
   },
   {
-    title: "Certification PHP/MySQL",
-    image: certif,
-    issuer: "OpenClassrooms",
-    date: "Décembre 2023",
-    link: "https://openclassrooms.com/",
+    title: "CSS Certification",
+    image: certifcss,
+    issuer: "Coursera",
+    date: "2023",
+    link: "https://www.coursera.org/account/accomplishments/verify/BA7W964M9R3M",
   },
   {
-    title: "Certification React",
-    image: certif,
-    issuer: "SoloLearn",
-    date: "Février 2024",
-    link: "https://www.sololearn.com/",
+    title: "HTML Certification",
+    image: certifhtml,
+    issuer: "Coursera",
+    date: "2023",
+    link: "https://www.coursera.org/account/accomplishments/verify/U4CPND5YPD5W",
+  },
+  {
+    title: "Java Certification",
+    image: certifjava,
+    issuer: "Intellipaat",
+    date: "2023",
+    link: "https://intellipaat.com/academy/certificate-link/?Yz0xMjQ0JnU9MTcyNTA1JmV4dD0x",
   },
 ]
 
-
-export { services, technologies,certificates, experiences,stages,testimonials,  projects, techWatchItems  }
+export { services, technologies, certificates, experiences, stages, testimonials, projects, techWatchItems }

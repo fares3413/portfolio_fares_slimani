@@ -22,11 +22,11 @@ const Hero = () => {
           </h1>
           <p className={`${styles.heroSubText} mt-2 text-white-100`}>
             Étudiant en BTS SIO SLAM à F2i Vincennes, <br className="sm:block hidden" />
-            passionné par le développement web et mobile
+            passionné par le développement web 
           </p>
         </div>
       </div>
-
+      
       <ComputersCanvas />
 
       <div className="absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center">

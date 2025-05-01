@@ -32,13 +32,31 @@ import tesla from "./company/tesla.png";
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
+import testris from "./testris.png";
+import tictactoe from "./tictactoe.png";
+import qr from "./qr.png";
 
-import certif from "../assets/certif/certihtmlcss.jpg";
+
+
+
+import certifhtml from "./certif/certifhtml.png";
+import certifcss from "../assets/certif/certifcss.png";
+import certifjava from "../assets/certif/certifjava.png";
+import certifsql from "../assets/certif/certifsql.png";
+import certifgoogle from "../assets/certif/certifgoogle.png";
 
 export {
 
   logo,
-  certif,
+  certifhtml,
+  certifcss,
+  certifjava,
+  certifsql,
+  certifgoogle,
+
+  testris,
+  tictactoe,
+  qr,
   backend,
   creator,
   mobile,
