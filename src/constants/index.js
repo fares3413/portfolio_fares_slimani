@@ -249,7 +249,7 @@ const projects = [
   {
     name: "Portfolio 3D",
     description:
-      "Portfolio interactif utilisant Three.js pour créer une expérience immersive et présenter mes compétences et projets de manière innovante.",
+      "Portfolio interactif utilisant TS pour créer une expérience immersive et présenter mes compétences et projets de manière innovante.",
     tags: [
       {
         name: "react",
@@ -265,7 +265,7 @@ const projects = [
       },
     ],
     image: tripguide,
-    source_code_link: "https://github.com/",
+    source_code_link: "https://github.com/fares3413/rental-cars",
   },
   {
     name: "Carousel Project",
@@ -307,7 +307,7 @@ const projects = [
       },
     ],
     image: jobit,
-    source_code_link: "https://github.com/",
+    source_code_link: "https://github.com/fares3413/furni-web",
   },
   {
     name: "Tic-Tac-Toe",
@@ -475,6 +475,13 @@ const certificates = [
     link: "https://www.coursera.org/account/accomplishments/verify/QUPQ2Z6JR8WY",
   },
   {
+    title: "Java Certification",
+    image: certifjava,
+    issuer: "Intellipaat",
+    date: "2023",
+    link: "https://intellipaat.com/academy/certificate-link/?Yz0xMjQ0JnU9MTcyNTA1JmV4dD0x",
+  },
+  {
     title: "CSS Certification",
     image: certifcss,
     issuer: "Coursera",
@@ -488,13 +495,7 @@ const certificates = [
     date: "2023",
     link: "https://www.coursera.org/account/accomplishments/verify/U4CPND5YPD5W",
   },
-  {
-    title: "Java Certification",
-    image: certifjava,
-    issuer: "Intellipaat",
-    date: "2023",
-    link: "https://intellipaat.com/academy/certificate-link/?Yz0xMjQ0JnU9MTcyNTA1JmV4dD0x",
-  },
+  
 ]
 
 export { services, technologies, certificates, experiences, stages, testimonials, projects, techWatchItems }
