@@ -44,11 +44,15 @@ import certifcss from "../assets/certif/certifcss.png";
 import certifjava from "../assets/certif/certifjava.png";
 import certifsql from "../assets/certif/certifsql.png";
 import certifgoogle from "../assets/certif/certifgoogle.png";
+import certifC from "../assets/certif/certifc.png";
+
+
 
 export {
 
   logo,
   certifhtml,
+  certifC,
   certifcss,
   certifjava,
   certifsql,

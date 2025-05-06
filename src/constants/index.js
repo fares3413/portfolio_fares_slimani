@@ -1,5 +1,6 @@
 import {
   certifcss,
+  certifC,
   certifgoogle,
   certifhtml,
   certifjava,
@@ -479,6 +480,13 @@ const certificates = [
     image: certifjava,
     issuer: "Intellipaat",
     date: "2023",
+    link: "https://intellipaat.com/academy/certificate-link/?Yz05MjcmdT0xNzI1MDUmZXh0PTE=",
+  },
+  {
+    title: "C Certification",
+    image: certifC,
+    issuer: "Intellipaat",
+    date: "2025",
     link: "https://intellipaat.com/academy/certificate-link/?Yz0xMjQ0JnU9MTcyNTA1JmV4dD0x",
   },
   {
